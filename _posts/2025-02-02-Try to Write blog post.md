@@ -1,7 +1,6 @@
 ---
 title: تلاش اول برای پست نویسی در این بلاگ
 description: میخوام ببینم میتونم شروع کنم اینجا بلاگ نویسی یا سخته آیا
-author: Alinex
 date: 2025-02-02 11:51:00 +0800
 categories: [Blogging, Test]
 tags: [Note]
