@@ -12,7 +12,7 @@ render_with_liquid: false
 ---
 
 
-<div dir="rtl" markdown="1">
+<div dir="rtl" markdown="1" lang="fa">
 
 ## شروع پست گذاری روز پنجم
 
