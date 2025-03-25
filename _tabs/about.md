@@ -62,6 +62,7 @@ order: 4
 }
 .instagram-button:hover {
   background-color: #C13584;
+  color: black;
 }
 </style>
 
