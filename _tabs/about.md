@@ -45,4 +45,24 @@ order: 4
 اگه حرفی داشتی یا خواستی بیشتر گپ بزنیم،  
 خوشحال می‌شم پیغام بدی! 💬😊
 
+<a href="https://instagram.com/alinex.ai" target="_blank" class="instagram-button">📸 دنبال کن توی اینستاگرام</a>
+
+<style>
+.instagram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #E1306C;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.instagram-button:hover {
+  background-color: #C13584;
+}
+</style>
+
 </div>
