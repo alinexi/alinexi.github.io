@@ -38,7 +38,7 @@ order: 4
 
 ## و مهم‌تر از همه، فهمیدم:
 
-![Desktop View](/assets/img/Posts/Aboutme-Intext.png){: .shadow }
+![Desktop View](/assets/img/Posts/Aboutme-Intext.png)
 
 ---
 
