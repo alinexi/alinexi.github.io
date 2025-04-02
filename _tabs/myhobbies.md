@@ -3,7 +3,6 @@
 icon: fa-brands fa-pied-piper-hat
 order: 5
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -183,6 +182,15 @@ order: 5
         <div class="card-content">
           <h3><a href="https://bpluspodcast.com/podcast/seventh-season/%d9%85%d9%84%d8%aa-%d8%af%d9%88%d9%be%d8%a7%d9%85%db%8c%d9%86-%d9%be%db%8c%d8%af%d8%a7%da%a9%d8%b1%d8%af%d9%86-%d8%aa%d8%b9%d8%a7%d8%af%d9%84-%d8%af%d8%b1-%d8%b9%d8%b5%d8%b1-%d9%84%d8%b0%d8%aa/" target="_blank">ملت دوپامین</a></h3>
           <p>یکی از بهترین اپیزود هایی که وقتی گوش کردم دیدم چقدر منم ! مخصوصا قسمت الاکلنگ</p>
+        </div>
+      </div>
+      <div class="card visible" data-category="self">
+        <a href="https://castbox.fm/episode/id5278661-id574121324?country=gb" target="_blank">
+          <img src="https://locomo.tips/podcast/ep8.jpg" alt="چرا احساس ناکافی بودن میکنیم؟">
+        </a>
+        <div class="card-content">
+          <h3><a href="https://castbox.fm/episode/id5278661-id574121324?country=gb" target="_blank">چرا احساس ناکافی بودن میکنیم؟</a></h3>
+          <p>این اپیزود شاهکاره چرا که دست گذاشته روی بزرکترین مسئله و بنیادی ترین مشکل بیشتر آدم ها مخصوصا برای ما که از فرهنگی میایم که این حس ناکافی بودن رو بشدت ساخته و پرداخته و خیلی چیزهامون بر پایه اشتباه ایجاد این حس درگیران ایجاد شده.</p>
         </div>
       </div>
     </div>
