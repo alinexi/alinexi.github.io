@@ -26,7 +26,7 @@ order: 5
 
     header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     header h1 {
@@ -36,9 +36,36 @@ order: 5
       color: #111;
     }
 
-    header p {
-      font-size: 1.3rem;
+    header p.description {
+      font-size: 1.1rem;
       color: #444;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .search-bar input {
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 250px;
+      max-width: 90%;
+    }
+
+    .search-bar button {
+      margin-left: 10px;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 8px;
+      background-color: #555;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
 
     section {
@@ -133,6 +160,12 @@ order: 5
       color: #555;
     }
 
+    .emotion-tag {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 10px;
+    }
+
     .load-more {
       display: block;
       margin: 30px auto 0;
@@ -159,12 +192,18 @@ order: 5
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>My Entertainment Diary</h1>
-    <p>Discover the podcasts I'm listening to and the movies I'm watching or planning to watch.</p>
+    <p class="description">
+      اینجا دفترچه‌ی یادداشت رسانه‌ای منه. هر چیزی که دیدم یا شنیدم و یه چیزی درونم تکون خورده، اینجا ثبتش می‌کنم. یه جورایی آرشیو حس‌هامه :) اگر دنبال پیشنهاد خوب یا یه حس خاصی هستی، شاید اینجا چیزی پیدا کنی.
+    </p>
   </header>
+
+  <div class="search-bar">
+    <input id="searchBox" type="text" placeholder="دنبال چی می‌گردی؟" onkeyup="searchCards()" />
+    <button onclick="pickRandomCard()">تصادفی ببرم 🎲</button>
+  </div>
 
   <section id="podcasts">
     <h2>Podcasts</h2>
@@ -257,5 +296,57 @@ order: 5
       loadMore('movie-cards');
     });
   </script>
+
+  <script>
+    function loadMore(sectionId) {
+      const section = document.getElementById(sectionId);
+      const hiddenCards = section.querySelectorAll('.card:not(.visible)');
+      for (let i = 0; i < 6 && i < hiddenCards.length; i++) {
+        hiddenCards[i].classList.add('visible');
+      }
+      if (section.querySelectorAll('.card:not(.visible)').length === 0) {
+        section.nextElementSibling.style.display = 'none';
+      }
+    }
+
+    function filterCards(containerId, category) {
+      const container = document.getElementById(containerId);
+      const cards = container.querySelectorAll('.card');
+      cards.forEach(card => {
+        const match = category === 'all' || card.dataset.category === category;
+        card.style.display = match && card.classList.contains('visible') ? 'block' : 'none';
+      });
+    }
+
+    function searchCards() {
+      const input = document.getElementById('searchBox').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(input) && card.classList.contains('visible') ? 'block' : 'none';
+      });
+    }
+
+    function pickRandomCard() {
+      const visibleCards = Array.from(document.querySelectorAll('.card.visible')).filter(c => c.style.display !== 'none');
+      if (visibleCards.length === 0) return;
+      const randomCard = visibleCards[Math.floor(Math.random() * visibleCards.length)];
+      window.scrollTo({
+        top: randomCard.offsetTop - 100,
+        behavior: 'smooth'
+      });
+      randomCard.style.boxShadow = '0 0 0 4px #ffbf00';
+      setTimeout(() => {
+        randomCard.style.boxShadow = '';
+      }, 2000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadMore('podcast-cards');
+      loadMore('movie-cards');
+    });
+  </script>
+
+
 </body>
 </html>
