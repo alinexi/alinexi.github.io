@@ -164,6 +164,20 @@ order: 1
       font-size: 1rem;
       color: #555;
     }
+    .card-content h3 a {
+      font-family: 'Vazirmatn', sans-serif;
+      font-weight: 600;
+    }
+
+    .card-content h3 a {
+      text-decoration: none;
+      color:rgb(187, 141, 14);
+      transition: color 0.3s;
+    }
+
+    .card-content h3 a:hover {
+      color:rgb(27, 111, 207);
+    }
 
     .emotion-tag {
       display: inline-block;
