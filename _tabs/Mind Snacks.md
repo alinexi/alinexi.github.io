@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fa-brands fa-pied-piper-hat
-order: 5
+order: 1
 ---
 <html lang="en">
 <head>
