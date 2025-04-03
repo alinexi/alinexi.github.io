@@ -8,7 +8,7 @@ order: 1
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Mind Snacks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -17,7 +17,7 @@ order: 1
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
       background: none;
       color: #333;
       line-height: 1.6;
@@ -25,18 +25,20 @@ order: 1
     }
 
     header {
+      
       text-align: center;
       margin-bottom: 30px;
     }
 
     header h1 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
       font-size: 3.5rem;
       margin-bottom: 15px;
       color: #111;
     }
 
     header p.description {
+      
       font-size: 1.1rem;
       color: #444;
       max-width: 700px;
@@ -73,7 +75,7 @@ order: 1
     }
 
     section h2 {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
       margin-bottom: 20px;
       font-size: 2.2rem;
       text-align: center;
@@ -82,6 +84,7 @@ order: 1
     }
 
     section h2::after {
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
       content: "";
       display: block;
       width: 60px;
@@ -113,6 +116,7 @@ order: 1
     }
 
     .cards-container {
+      
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -120,6 +124,7 @@ order: 1
     }
 
     .card {
+      
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -161,9 +166,21 @@ order: 1
     }
 
     .emotion-tag {
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 10px;
+      display: inline-block;
+      background-color: #fffae6;
+      color: #6c4c01;
+      border: 1px solid #ffe08a;
+      border-left: 6px solid #ffbf00;
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 0.95rem;
+      font-family: 'Vazirmatn', sans-serif;
+      font-weight: 500;
+      margin-top: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 100%;
+      word-break: break-word;
+      line-height: 1.5;
     }
 
     .load-more {
@@ -230,6 +247,8 @@ order: 1
         <div class="card-content">
           <h3><a href="https://castbox.fm/episode/id5278661-id574121324?country=gb" target="_blank">چرا احساس ناکافی بودن میکنیم؟</a></h3>
           <p>این اپیزود شاهکاره چرا که دست گذاشته روی بزرکترین مسئله و بنیادی ترین مشکل بیشتر آدم ها مخصوصا برای ما که از فرهنگی میایم که این حس ناکافی بودن رو بشدت ساخته و پرداخته و خیلی چیزهامون بر پایه اشتباه ایجاد این حس درگیران ایجاد شده.</p>
+          <p class="emotion-tag">🧠 حس‌برانگیز و ذهن‌درگیرکن، مخصوص وقتایی که دلت می‌خواد با خودت خلوت کنی</p>
+
         </div>
       </div>
     </div>
