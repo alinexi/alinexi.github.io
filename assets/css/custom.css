@@ -1,7 +1,0 @@
-/* Import the Google Fonts link */
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
-
-/* Apply Vazirmatn font to the whole body and cards */
-body, .post-card, .post-card h2, .post-card p {
-  font-family: 'Vazirmatn', sans-serif;
-}
