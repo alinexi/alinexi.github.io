@@ -6,16 +6,9 @@ order: 1
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Mind Snacks</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Vazirmatn', 'Roboto', sans-serif;
       background: none;
@@ -23,33 +16,26 @@ order: 1
       line-height: 1.6;
       padding: 40px 20px;
     }
-
     header {
-      
       text-align: center;
       margin-bottom: 30px;
     }
-
     header h1 {
       font-family: 'Vazirmatn', 'Roboto', sans-serif;
       font-size: 3.5rem;
       margin-bottom: 15px;
       color: #111;
     }
-
     header p.description {
-      
       font-size: 1.1rem;
       color: #444;
       max-width: 700px;
       margin: 0 auto 30px;
     }
-
     .search-bar {
       text-align: center;
       margin-bottom: 40px;
     }
-
     .search-bar input {
       padding: 10px 15px;
       font-size: 1rem;
@@ -58,7 +44,6 @@ order: 1
       width: 250px;
       max-width: 90%;
     }
-
     .search-bar button {
       margin-left: 10px;
       padding: 10px 18px;
@@ -69,11 +54,9 @@ order: 1
       border: none;
       cursor: pointer;
     }
-
     section {
       margin-bottom: 60px;
     }
-
     section h2 {
       font-family: 'Vazirmatn', 'Roboto', sans-serif;
       margin-bottom: 20px;
@@ -82,7 +65,6 @@ order: 1
       color: #111;
       position: relative;
     }
-
     section h2::after {
       font-family: 'Vazirmatn', 'Roboto', sans-serif;
       content: "";
@@ -93,12 +75,10 @@ order: 1
       margin: 10px auto 0;
       border-radius: 2px;
     }
-
     .filter-buttons {
       text-align: center;
       margin-bottom: 30px;
     }
-
     .filter-buttons button {
       margin: 5px;
       padding: 8px 16px;
@@ -110,21 +90,16 @@ order: 1
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .filter-buttons button:hover {
       background-color: #ccc;
     }
-
-    .cards-container {
-      
+    .cards-container { 
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
     }
-
-    .card {
-      
+    .card { 
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -133,33 +108,27 @@ order: 1
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: none;
     }
-
     .card.visible {
       display: block;
     }
-
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
-
     .card img {
       width: 100%;
       height: auto;
       display: block;
     }
-
     .card-content {
       padding: 20px 18px;
     }
-
     .card-content h3 {
       margin-bottom: 12px;
       font-family: 'Montserrat', sans-serif;
       font-size: 1.4rem;
       color: #222;
     }
-
     .card-content p {
       font-size: 1rem;
       color: #555;
@@ -168,17 +137,14 @@ order: 1
       font-family: 'Vazirmatn', sans-serif;
       font-weight: 600;
     }
-
     .card-content h3 a {
       text-decoration: none;
       color:rgb(187, 141, 14);
       transition: color 0.3s;
     }
-
     .card-content h3 a:hover {
       color:rgb(27, 111, 207);
     }
-
     .emotion-tag {
       display: inline-block;
       background-color: #fffae6;
@@ -196,7 +162,6 @@ order: 1
       word-break: break-word;
       line-height: 1.5;
     }
-
     .load-more {
       display: block;
       margin: 30px auto 0;
@@ -210,11 +175,9 @@ order: 1
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .load-more:hover {
       background-color: #333;
     }
-
     @media (max-width: 768px) {
       .cards-container {
         flex-direction: column;

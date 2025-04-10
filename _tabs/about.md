@@ -3,11 +3,35 @@
 icon: fas fa-info-circle
 order: 5
 ---
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Mind Snacks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
+      background: none;
+      color: #333;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    header h2 {
+      font-family: 'Vazirmatn', 'Roboto', sans-serif;
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      color: #111;
+    }
+    .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
+  </style>
+</head>
+<h1 class="title">سلام! من علینکس‌ام 👋</h1>
+<n></n>
 <div dir="rtl" markdown="1" lang="fa">
-
-# سلام! من علینکس‌ام 👋
-
 آدمی که یه روزی توی مهندسی شیمی سرک کشید، بعد وسط راه فهمید که دلش بیشتر برای **کد زدن**، **فکر کردن به محصول**، **ساختن**، و البته **نوشتن** می‌تپه 💻🧠✍️
 
 الان **دانشجوی ارشد مهندسی نرم‌افزارم**،  
@@ -64,6 +88,6 @@ order: 5
   background-color: #C13584;
   color: black;
 }
-</style>
+</>
 
 </div>
